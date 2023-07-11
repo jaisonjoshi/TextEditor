@@ -16,7 +16,7 @@ function Home() {
   useEffect(() => {
     setLoading(true);
     axios
-      .get("http://localhost:5000/documents")
+      .get('https://text-editor-server.jaisonjoshi.repl.co/')
       .then((response) => {
         console.log(response.data);
         setDocuments(response.data);
