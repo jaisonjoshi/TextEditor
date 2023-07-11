@@ -94,7 +94,7 @@ function TextEditor() {
 
   //Establishing connection using socket.io
   useEffect(() => {
-    const soc = io("https://text-editor-server.jaisonjoshi.repl.co/");
+    const soc = io("http://localhost:5000");
     console.log("connecting to server");
     setSocket(soc);
 
